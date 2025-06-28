@@ -108,7 +108,7 @@
             background: var(--primary-green);
             border-radius: 50%;
             opacity: 0.1;
-            animation: morph 15s ease-in-out infinite;
+            animation: morph 15pillars ease-in-out infinite;
         }
 
         .shape-1 {
@@ -393,6 +393,7 @@
             transform-style: preserve-3d;
             transition: all 0.6s ease;
             overflow: hidden;
+            cursor: pointer; /* Added to indicate clickability */
         }
 
         .team-card::after {
@@ -482,12 +483,12 @@
         }
 
         .member-social {
-             position: absolute;
-    bottom: 1rem;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
+            position: absolute;
+            bottom: 1rem;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
         }
 
         .social-link {
@@ -663,22 +664,22 @@
     <main class="main-content">
         <div class="container">
             <section class="section fade-in">
-    <h2 class="section-title">Playmakers</h2>
-    <div class="feature-grid">
-        <div class="feature-card">
-            <h3><i class="fas fa-users-cog"></i> @PlaymakerDAO</h3>
-            <p>The OG invite-only DAO empowering the next wave of innovators and builders.</p>
-        </div>
-        <div class="feature-card">
-            <h3><i class="fas fa-network-wired"></i> Multi-Chain Vision</h3>
-            <p>BTC / SOL / ETH / SUI / SEI / MONAD / ABSTRACT / BERA — unlocking access across leading blockchain ecosystems.</p>
-        </div>
-        <div class="feature-card">
-            <h3><i class="fas fa-hand-holding-heart"></i> Opportunities for the Underserved</h3>
-            <p>We provide access, tools, and community to those often overlooked — builders, dreamers, and creators with no voice in traditional systems.</p>
-        </div>
-    </div>
-</section>
+                <h2 class="section-title">Playmakers</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3><i class="fas fa-users-cog"></i> @PlaymakerDAO</h3>
+                        <p>The OG invite-only DAO empowering the next wave of innovators and builders.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-network-wired"></i> Multi-Chain Vision</h3>
+                        <p>BTC / SOL / ETH / SUI / SEI / MONAD / ABSTRACT / BERA — unlocking access across leading blockchain ecosystems.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-hand-holding-heart"></i> Opportunities for the Underserved</h3>
+                        <p>We provide access, tools, and community to those often overlooked — builders, dreamers, and creators with no voice in traditional systems.</p>
+                    </div>
+                </div>
+            </section>
 
             <section class="section fade-in">
                 <h2 class="section-title">Core Team</h2>
@@ -690,27 +691,7 @@
                             <div class="avatar-fallback" style="display: none;">AC</div>
                         </div>
                         <div class="member-name">Albertor</div>
-                        <div class="member-role">FULLTIME WEB3
-
-CEO - 
-@PlaymakerDAO
-
-
-Intern at 
-@WizArt_Studios
-
-
-Hunter/CM
-|
-@LunaLabsVC
- |
-@insiders_xyz
- | 
-@AdrasteaFinance
- | 
-@OraclesBTC
- | 
-@solayer_labs</div>
+                        <div class="member-role">FULLTIME WEB3<br>CEO - @PlaymakerDAO<br>Intern at @WizArt_Studios<br>Hunter/CM | @LunaLabsVC | @insiders_xyz | @AdrasteaFinance | @OraclesBTC | @solayer_labs</div>
                         <div class="member-social">
                             <a href="https://x.com/SolAlbertor" class="social-link" target="_blank">
                                 <svg class="x-icon" viewBox="0 0 24 24">
@@ -725,10 +706,7 @@ Hunter/CM
                             <div class="avatar-fallback" style="display: none;">CEO</div>
                         </div>
                         <div class="member-name">Wizard</div>
-                        <div class="member-role">Started a Design Studio with 0$.
-3 years later completed over 1000+ projects!
-Founder and CEO 
-@WizArt_Studios</div>
+                        <div class="member-role">Started a Design Studio with 0$.<br>3 years later completed over 1000+ projects!<br>Founder and CEO @WizArt_Studios</div>
                         <div class="member-social">
                             <a href="https://x.com/WizartAy" class="social-link" target="_blank">
                                 <svg class="x-icon" viewBox="0 0 24 24">
@@ -743,9 +721,7 @@ Founder and CEO
                             <div class="avatar-fallback" style="display: none;">SP</div>
                         </div>
                         <div class="member-name">solplayboy</div>
-                        <div class="member-role">In the trenches looking for cooks | Founder 
-@PlaymakerDAO
- | Backed by X Ventures</div>
+                        <div class="member-role">In the trenches looking for cooks | Founder @PlaymakerDAO | Backed by X Ventures</div>
                         <div class="member-social">
                             <a href="https://x.com/solplayboy" class="social-link" target="_blank">
                                 <svg class="x-icon" viewBox="0 0 24 24">
@@ -769,8 +745,6 @@ Founder and CEO
                             </a>
                         </div>
                     </div>
-                    
-
                 </div>
             </section>
 
@@ -793,29 +767,25 @@ Founder and CEO
             </section>
 
             <section class="cta-section fade-in">
-    <h2 class="section-title">Join the Future</h2>
-    <p style="color: var(--gray); font-size: 1.2rem; margin-bottom: 3rem;">
-        Ready to join the OG invite-only DAO? Connect with our community and shape what's next.
-    </p>
-    <a href="https://x.com/PlaymakerDAO" class="cta-btn">Enter the DAO</a>
-</section>
-
-
+                <h2 class="section-title">Join the Future</h2>
+                <p style="color: var(--gray); font-size: 1.2rem; margin-bottom: 3rem;">
+                    Ready to join the OG invite-only DAO? Connect with our community and shape what's next.
+                </p>
+                <a href="https://x.com/PlaymakerDAO" class="cta-btn">Enter the DAO</a>
+            </section>
         </div>
     </main>
 
     <footer>
-    <div class="container">
-        <div class="footer-content">
-            &copy; 2025 Playmakers DAO — The OG invite-only DAO
+        <div class="container">
+            <div class="footer-content">
+                © 2025 Playmakers DAO — The OG invite-only DAO
+            </div>
+            <div class="footer-content">
+                Developed with ❤️ by Clankak
+            </div>
         </div>
-        <div class="footer-content">
-            Developed with ❤️ by Clankak
-        </div>
-    </div>
-</footer>
-
-
+    </footer>
 
     <script>
         // Simple Animated Green Point Cursor
@@ -831,7 +801,7 @@ Founder and CEO
             cursor.style.top = mouseY + 'px';
         });
 
-        // Hide cursor when hovering over interactive elements
+        // Hide cursor when hovering over interactive elements and handle team-card clicks
         document.querySelectorAll('a, button, .team-card, .feature-card, .cta-btn').forEach(el => {
             el.addEventListener('mouseenter', () => {
                 cursor.style.display = 'none';
@@ -839,6 +809,21 @@ Founder and CEO
             
             el.addEventListener('mouseleave', () => {
                 cursor.style.display = 'block';
+            });
+
+            // Redirect to X profile for team-card clicks
+            if (el.classList.contains('team-card')) {
+                el.addEventListener('click', () => {
+                    const socialLink = el.querySelector('.social-link')?.href || 'https://x.com/PlaymakerDAO';
+                    window.open(socialLink, '_blank');
+                });
+            }
+        });
+
+        // Prevent default click on social-link to avoid double navigation
+        document.querySelectorAll('.social-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevents team-card click event from firing
             });
         });
 
